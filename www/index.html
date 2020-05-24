@@ -7,14 +7,33 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="styleseet" href="components/bootstrap-4.5.0/dist/css/bootstrap.css">
-    <script src="components/bootstrap-4.5.0/dist/js/bootstrap.js"></script>
+    <link rel="styleseet" href="components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="components/jquery/lib/bootstrap/css/bootstrap.min.css">
+    <script src="components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="components/jquery/lib/jquery-3.4.1.min.js"></script>
-    <script>
-
-    </script>
+    <script src="components/jquery/lib/js/bootstrap.min.js"></script>
+    <script src="controller.js"></script>
+    <script src="components/cordova-plugin-dialogs/www/notification.js"></script>
 </head>
-<body>
-	<br />
+<body onload="starter()">
+        <div class="container maincontainer">
+                <div class="row mainrow">
+                        <div class="col-sm-12 btn-location">
+                                <div class="btn-group btn-group-inline" role="group">
+                                    <button type="button" id="nonotification" class="btn btn-lg btn-primary" onclick="onBug();">
+                                        Confirmar Acesso Direto
+                                        </button>
+                                        <button type="button" id="notification" class="btn btn-lg btn-danger" data-toggle="tooltip" title="Essa funcao esta com erros" onclick="notificate();">
+                                            Notificações
+                                        </button>
+                                </div>
+                        </div>
+                </div>
+                <div class="row panelrow " id="panel">
+                    <div class="col-sm-12 controller " id="controlPanel">
+                    </div>
+                </div>
+                
+        </div>
 </body>
 </html>

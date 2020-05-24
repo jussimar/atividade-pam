@@ -4,3 +4,24 @@
  */
 
 /*** <GENERATED> ***/
+
+
+body{
+    background: rgb(63, 62, 62) !important;
+}
+
+.btn-location{
+    margin-top: 10%;
+    margin-left: 5%;
+    padding: 10px 20px;
+}
+
+#controlPanel{
+    background-color: black;
+    color: green;
+    font-family: Cantarell;
+    border: 2px gray solid;
+    max-width: 100%;
+    width: 100%;
+
+}
